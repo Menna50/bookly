@@ -1,6 +1,6 @@
 import 'package:bookly/core/constants.dart';
 import 'package:bookly/core/utils/asset_path.dart';
-import 'package:bookly/features/home/view/presentaion/home.dart';
+import 'package:bookly/features/home/view/presentaion/home_view.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
@@ -46,7 +46,7 @@ class _SplashViewBodyState extends State<SplashViewBody>  with SingleTickerProvi
   void navigateToHome()
   {
     Future.delayed(Duration(seconds: 5),(){
-      Get.to(const Home(),transition: Transition.fade);
+      Get.to(const HomeView(),transition: Transition.fade);
     });
   }
   void initSlidingAnimation()
