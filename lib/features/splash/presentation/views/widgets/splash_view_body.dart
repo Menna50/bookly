@@ -37,7 +37,8 @@ class _SplashViewBodyState extends State<SplashViewBody>  with SingleTickerProvi
         SvgPicture.asset(AssetPath.logo,width: 200,fit: BoxFit.contain,),
         const SizedBox(height: 6,),
         SlideTransition
-          (position: slidingAnimation,
+          (
+            position: slidingAnimation,
             child: const Text('Read Free Books.',textAlign: TextAlign.center,)
         )
       ],
